@@ -1,0 +1,50 @@
+<!-- Donate Page -->
+
+{% extends "layout.html" %}
+{% block content %}
+<link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename = 'css/donate.css') }}">
+
+	<!-- Image -->
+	<div class="container" style="margin-bottom:20px;">
+		<div class="big-title bottom-left">Help Us Save The Nature</div>
+		<img src="{{ url_for('static', filename='images/earth.jpg' ) }}" class="main-picture">
+	</div>
+
+	<!-- Donate Form -->
+	<div class="center" style="background-color:#f1f1f1;max-width:800px">
+		<div id="form-div">
+			<form>
+				<!-- fieldset Used To Group Elements In A Form -->
+				<fieldset>
+					<div class="center-div">
+						<h2>Donate To The Trees</h2>
+						<p> "Lend us your might to save our Earth from corruption"
+							<br>
+							Donate to Us and We Promise to make this world GREEN AGAIN!!   
+						</p>
+						
+						<!-- type Differentiate Input Types -->
+						<!-- required Makes Input Must Be Filled -->
+						<label>Full Name</label>
+							<input type="text" required><br>
+						<label>Card Number</label>
+							<input type="text" required><br>
+						<label>Expiration Date</label>
+							<input type="date" required><br>
+						<label>Choose The Amount</label>
+						
+						<div class="center-div">
+							<button class="main-button amount-button" >RM 10</button>
+							<button class="main-button amount-button" >RM 20</button>
+							<button class="main-button amount-button" >RM 50</button>
+							<button class="main-button amount-button" >RM 100</button>
+						</div >
+						
+						<button class="main-button donate-button">Confirm</button>
+					</div>
+				<fieldset>
+			</form>
+		</div>
+	</div>
+
+{% endblock content %}

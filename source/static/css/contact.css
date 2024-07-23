@@ -1,0 +1,41 @@
+/* Contact Page CSS */
+
+form {
+	background-color: #F5F5F5;
+	margin:auto;
+	padding: auto;
+	max-width:700px;
+	border: lightgrey 1px solid;
+	border-radius: 20px;
+}
+
+textarea,label {
+  margin-left: 20px;
+  font-family: 'Lexend', sans-serif;
+  font-size: 20px;
+}
+
+#name, #email, #message{
+  display: block;
+  margin: 20px;
+  width: 80%;
+  border-radius: 10px
+}
+
+#name, #email {
+  height: 40px;
+}
+
+.send-button {
+  background-color: #3CB371;
+  color: #f4f4f4;
+  font-family: 'Bebas Neue', cursive
+  font-weight: 700;
+  font-size: 25px;
+  border-radius: 20px;
+  padding:20px;
+  text-align: center;
+  width: 250px;
+}
+
+

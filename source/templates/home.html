@@ -1,0 +1,73 @@
+<!-- Home Page -->
+
+{% extends "layout.html" %}			
+{% block content %}
+<link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename = 'css/home.css') }}">
+		
+	<!-- Image -->
+	<div class="container">
+		<div class="big-title bottom-left">Protect Our Nature</div>
+		<img src="{{ url_for('static', filename='images/nature1.jpg' ) }}" class="main-picture">
+	</div>
+	
+	<!-- Content -->
+	<div style="background-color: lightgrey">
+	
+		<!-- Paragraph 1 -->
+		<p class="title">How Does Nature Affect to The Wellbeing?</p>
+		<div>
+			<p>Research reveals that environments can increase or reduce our stress, which in turn impacts our bodies. What you are seeing, hearing, experiencing at any moment is changing not only your mood, but how your nervous, endocrine, and immune systems are working.</p>	
+			<p>	The stress of an unpleasant environment can cause you to feel anxious, or sad, or helpless. This in turn elevates your blood pressure, heart rate, and muscle tension and suppresses your immune system. A pleasing environment reverses that.</p>	
+			<p>	And regardless of age or culture, humans find nature pleasing. In one study cited in the book Healing Gardens, researchers found that more than two-thirds of people choose a natural setting to retreat to when stressed.</p>
+		</div>
+		
+		<!-- Quote by William Shakespeare --> 
+		<div class="main-theme2">
+			<span class="quote-symbol">❝</span>
+			<p style="margin-top:-40px;font-size:24px;"><i>One touch of nature makes the whole world kin.</p>
+			<p></i><span style="font-size:20px;margin-top:10px">—William Shakespeare</span></p>
+		</div>
+
+		<!-- Paragraph 2 -->
+		<div class="main-theme">
+			<p class="title">Nature heals</p>
+			<div>
+				<img class="image" src="{{ url_for('static', filename='images/nature2.jpg' ) }}"></img>
+				<p>Being in nature, or even viewing scenes of nature, reduces anger, fear, and stress and increases pleasant feelings. Exposure to nature not only makes you
+				feel better emotionally, it contributes to your physical wellbeing, reducing blood pressure, heart rate, muscle tension, and the production of stress hormones. It may even reduce mortality, according to scientists such as public health researchers Stamatakis and Mitchell.</p>
+				<p>Research done in hospitals, offices, and schools has found that even a simple plant in a room can have a significant impact on stress and anxiety.</p>
+			</div>
+		</div>
+
+		<!-- Paragraph 3 -->
+		<div>
+			<p class="title">Nature soothes</p>
+			<div>
+				<p>In addition, nature helps us cope with pain. Because we are genetically programmed to find trees, plants, water, and other nature elements engrossing, we are absorbed by nature scenes and distracted from our pain and discomfort.</p>
+				<p>This is nicely demonstrated in a now classic study of patients who underwent gallbladder surgery; half had a view of trees and half had a view of a wall. According to the physician who conducted the study, Robert Ulrich, the patients with the view of trees tolerated pain better, appeared to nurses to have fewer negative effects, and spent less time in a hospital. More recent studies have shown similar results with scenes from nature and plants in hospital rooms.</p> 
+			</div>
+		</div>
+		
+		<!-- JavaScript Applied Button -->
+		<button  class="main-button extra-info-button" onclick="document.getElementById('button').style.display='block'"><b>Did You Know!</b></button> 
+		<div id="button" class="extra-info">
+			<span onclick="this.parentElement.style.display='none'" class="main-button close-button">x</span>
+			<div class="extra-info-font">
+				<p >20% of Earth’s oxygen is produced by the Amazon rainforest!</p>
+				<p >Our atmosphere is made up of roughly 78 per cent nitrogen and 21 per cent oxygen, with various other gases present in small amounts. The vast majority of living organisms on Earth need oxygen to survive, converting it into carbon dioxide as they breathe. Thankfully, plants continually replenish our planet’s oxygen levels through photosynthesis. During this process, carbon dioxide and water are converted into energy, releasing oxygen as a by-product. Covering 5.5 million square kilometres (2.1 million square miles), the Amazon rainforest cycles a significant proportion of the Earth’s oxygen, absorbing large quantities of carbon dioxide at the same time..</p>
+			</div>
+		</div>
+
+		<!-- Paragraph 4 -->
+		<div class="main-theme">
+			<p class="title">Nature connects</p>
+			<div>
+				<img class="image" src="{{ url_for('static', filename='images/nature3.jpg' ) }}"></img>
+				<p>According to a series of field studies conducted by Kuo and Coley at the Human-Environment Research Lab, time spent in nature connects us to each other and the larger world. Another study at the University of Illinois suggests that residents in Chicago public housing who had trees and green space around their building reported knowing more people, having stronger feelings of unity with neighbors, being more concerned with helping and supporting each other, and having stronger feelings of belonging than tenants in buildings without trees. In addition to this greater sense of community, they had a reduced risk of street crime, lower levels of violence and aggression between domestic partners, and a better capacity to cope with life’s demands, especially the stresses of living in poverty.</p>
+				<p>This experience of connection may be explained by studies that used fMRI to measure brain activity.  When participants viewed nature scenes, the parts of the brain associated with empathy and love lit up, but when they viewed urban scenes, the parts of the brain associated with fear and anxiety were activated. It appears as though nature inspires feelings that connect us to each other and our environment.</p>
+			</div>
+		</div>	
+		
+	</div>
+		
+{% endblock content %}

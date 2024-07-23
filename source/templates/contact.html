@@ -1,0 +1,34 @@
+<!-- Contact Page -->
+
+{% extends "layout.html" %}			
+{% block content %}
+<link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename = 'css/contact.css') }}">
+	
+	<!-- Contact Form -->
+	<form>
+		<h1 class="big-title" style="text-align:center">Contact Us</h1>
+		
+			<!-- fieldset Used To Group Elements In A Form -->
+			<fieldset>
+				
+				<!-- type Differentiate Input Types -->
+				<!-- required Makes Input Must Be Filled -->
+				<label>Name:
+					<input id="name" type="text" required>
+				</label>
+				<label>E-mail:
+					<input id="email" type="email" required>
+				</label>
+				<label>Tell us your message:</label>
+				
+				<!-- textarea Defines A Multi-Line Text Input -->
+				<textarea id="message"  rows="8" cols="50"></textarea>
+				
+				<div style="margin:auto;text-align:center;">
+					<button class="main-button send-button">Send</button>
+				</div>
+				
+			</fieldset>
+	</form>
+	
+{% endblock content %}

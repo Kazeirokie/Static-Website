@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<!-- Import Title From routes.py -->
+		<title>Treesure - {{title}}</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename = 'css/layout.css') }}">
+	</head>
+	
+	<body>
+		<header>
+		
+			<!-- Navigation Bar -->
+			<div id="nav-bar" >
+				<a class="active" style="font-size:30px;padding:12px">TREESURE</a>
+				<a class="main-button" style="color:white" href="{{ url_for('home') }}"><i class="fa fa-fw fa-home"></i>Home</a>
+				<a class="main-button" style="color:white" href="{{ url_for('about') }}"><i class="fa fa-fw fa-user"></i>About</a>
+				<a class="main-button" style="color:white" href="{{ url_for('donate') }}"><i class="fa fa-fw fa-money"></i>Donate</a>
+				<a class="main-button" style="color:white" href="{{ url_for('contact') }}"><i class="fa fa-fw fa-phone"></i>Contact</a>
+			</div>
+			
+		</header>
+		
+		<div id="home" class="content">
+			{% block content %}
+				<!-- Content from other pages starts here -->
+			{% endblock content %}
+		</div>
+	</body>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<a href="https://web.facebook.com/aminul.aiman.35/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+		<a href="https://twitter.com/4min_4iman" target="_blank"><i class="fa fa-twitter "></i></a>
+		<a href="https://www.instagram.com/4min_4iman/" target="_blank"><i class="fa fa-instagram "></i></a>
+		<p style="font-size:15px!important">Created by Aminul Aiman</p>
+	</footer>
+
+</html> 

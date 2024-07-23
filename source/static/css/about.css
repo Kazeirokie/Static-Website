@@ -1,0 +1,15 @@
+/* About Page CSS */
+
+section {
+	background-color:white;
+	max-width:1000px;
+}
+
+.border {
+	border-top:black solid 1px;
+	border-bottom:black solid 1px
+}
+
+
+
+

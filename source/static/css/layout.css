@@ -1,0 +1,162 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+/* Import Icon */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* box-sizing: border-box; allows padding and border included in total width and height of the element */
+*{box-sizing: border-box}
+
+header{margin-bottom: 20px}
+
+body{ 
+    background-color:#DCDCDC ;
+	font-family: 'Lexend', sans-serif;
+	color: black ;
+	margin:0;
+}
+
+p{ 
+    font-size: 19px;
+	margin: 20px;
+	padding-bottom: 20px;
+}
+
+img{ 
+    border:solid black 1px;
+	vertical-align:middle;
+} 
+
+/* inherit allows to use specific color in 'a' tags set by programmer */ 
+a{color:inherit}		
+
+fieldset {
+  border: 0px;
+}
+
+footer{ 
+	text-align : center ;
+	background-color : black;
+	color : white ;
+	padding : 10px;
+	margin-top : 30px;
+	font-size:24px
+}
+
+#nav-bar{
+	background-color: #555;
+	top: 0;
+	width: 100%;
+	overflow: auto;
+}
+
+/* Style for 'a' With nav-bar id */
+#nav-bar a{
+  width: 20%;
+  height: 70px;
+  float: left;
+  padding: 20px;
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  text-decoration:none;
+}
+
+#nav-bar a.active{
+  background-color: ForestGreen;
+}
+
+/* Navigation Bar Adjusted In Phone Screen Width */
+@media screen and (max-width: 500px){
+  #nav-bar a {
+	float: none;
+	display: block;
+	width: 100%;
+	text-align: left;
+  }
+}
+
+.main-picture{
+	width:100%;
+	background-size: 100% 100%;
+	height: 400px;
+	background-size: cover ;
+	margin: 0px;
+}
+
+.container{
+  object-fit: cover;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left{
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.main-theme{
+	color:#000;
+	background-color:#A0DAA9;
+}
+	
+/* !important Gives The Code Priority To Be Executed */
+.main-theme2{
+	color:#000!important;
+	background-color:#f1f1f1!important;
+}
+   
+.big-title{
+	font-size:50px;
+	font-family: 'Bebas Neue', cursive;
+}
+
+.title{
+	font-size:30px;
+	margin:10px;
+	font-weight:bold
+} 
+
+.content{
+	margin-left:auto;
+	margin-right:auto;
+	max-width:1200px;
+}
+
+/* 'cursor:pointer' creates pointer cursor around button */
+.main-button{
+	border:none;
+	display:inline-block;
+	padding:8px 16px;
+	vertical-align:middle;
+	color:inherit;
+	background-color:inherit;
+	text-align:center;
+	cursor:pointer;
+}
+
+.main-button:hover{
+	color:#000!important;
+	background-color:#ccc!important
+}
+
+.image{
+	float: right;
+	margin: 0px 20px 0px 20px;
+	width:300px;
+	height:200px;
+	border-radius: 10px;
+}
+
+.center{
+	border:black 1px solid;
+	border-radius:20px;
+	background-color:white;
+	padding:20px;
+	margin:auto
+}
+
+

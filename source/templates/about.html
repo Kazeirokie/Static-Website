@@ -1,0 +1,35 @@
+<!-- About Page -->
+
+{% extends "layout.html" %}
+{% block content %}
+<link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename = 'css/about.css') }}">
+	
+	<!-- About -->
+	<div style="padding:10px;">
+		<div class="border">
+			<h2 class="big-title" style="text-align:center">About Us<h2>
+		</div>
+		
+		<p>We are "Treesure" a non-goverment corporation; established on 2021 with the goals and mission to take care of our only planet "Earth". With the natural disasters that keep increasing over time really opening our eyes that its time to stop humans from their selfishness and start concerning OUR LIFE in the Future.</p>
+	</div>
+
+	<!-- Mission -->
+	<!-- section Grouped Generic Block Of Related Contents -->
+	<section class="center">
+		<p class="title" style="text-align:center;">Our Mission</p>
+	
+		<div style="min-height:500px">
+			<p class="title"> Plant Trees </p>
+			<img class="image" style="width:400px;height:400px;" src="{{ url_for('static', filename='images/planttree.jpg' ) }}">
+			<p> We plant new trees by collecting donation from our supportive community. All tree saplings bought will be planted at suitable place reserved for our project. We also had divided our teams to take care of those trees; fertilize and water them every day until they are strong enough to grow alone.</p>
+		</div>
+		
+		<div style="min-height:500px">
+			<p class="title"> Create A Huge Community </p>
+			<img class="image" style="width:400px;height:400px;" src="{{ url_for('static', filename='images/community.jpg' ) }}">
+			<p> One of our mission is also to create a huge community; so that's make more easier for our corporation to be known across the globe. We really want to recover our planet as much as we could, prioritize the importance of nature and reduce the probability of climate change in this 10 years remaining.</p>
+		</div>
+	</section>
+	
+{% endblock content %}
+	

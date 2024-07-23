@@ -1,0 +1,59 @@
+/* Donate Page CSS */
+
+#form-div{
+	width: auto;
+	height: auto;
+	padding: 10px 10px;
+	text-align: center;
+	margin:auto;
+}
+
+/* Style for 'h2' With 'form-div' id */
+#form-div h2{
+	font-size: 40px;
+	font-family: 'Bebas Neue', cursive
+}
+
+/* Style for 'label' With 'form-div' id */
+#form-div label{
+	font-size: 20px;
+	display: inline-block;
+	width: 300px;
+	margin: 25px auto 5px auto;
+}
+
+/* Style for 'input' With 'form-div' id */
+#form-div input[type="text"], #form-div input[type="date"]{
+	width: 300px;
+	border: 2px solid #A5A5A5;
+	border-radius: 10px;
+	outline: none;
+	padding: 5px;
+    height: 30px;
+}
+
+.center-div{
+	width: 75%;
+	margin: auto;
+}
+
+.donate-button{
+	font-size: 20px;
+	border: 1px black solid;
+	border-radius: 30px;
+	width: 200px;
+	color: #f4f4f4;
+	background-color: #3CB371;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	padding: 5px;
+}
+
+.amount-button{
+	color:black;
+	background-color:white;
+	margin:10px;
+	border-radius:30px;	
+	border: lightgrey 1px solid;
+}
+  
